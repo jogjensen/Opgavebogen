@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Name" xml:space="preserve"><value>Navn</value></data>
+  <data name="Email" xml:space="preserve"><value>Email</value></data>
+  <data name="Phone" xml:space="preserve"><value>Telefon</value></data>
+  <data name="Description" xml:space="preserve"><value>Beskrivelse</value></data>
+  <data name="PlaceOfWork" xml:space="preserve"><value>Arbejdsplads</value></data>
+</root>

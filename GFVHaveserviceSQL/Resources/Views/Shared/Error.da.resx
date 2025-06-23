@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Error" xml:space="preserve"><value>Fejl</value></data>
+  <data name="ErrorProcessing" xml:space="preserve"><value>En fejl opstod under behandlingen af din forespørgsel.</value></data>
+  <data name="RequestId" xml:space="preserve"><value>Request ID:</value></data>
+  <data name="DevelopmentMode" xml:space="preserve"><value>Udviklingstilstand</value></data>
+  <data name="DevelopmentWarning" xml:space="preserve"><value>Udviklingsmiljø bør ikke bruges i produktion.</value></data>
+  <data name="DevelopmentInfo" xml:space="preserve"><value>Skift til udviklingsmiljø for at se mere detaljerede fejloplysninger.</value></data>
+  <data name="DevelopmentInstructions" xml:space="preserve"><value>Til lokal fejlsøgning, sæt ASPNETCORE_ENVIRONMENT til Development og genstart appen.</value></data>
+</root>

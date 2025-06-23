@@ -1,0 +1,12 @@
+@using System.Threading
+@{
+    var currentCulture = Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
+    var returnUrl = Context.Request.Path + Context.Request.QueryString;
+}
+<form asp-controller="Culture" asp-action="SetLanguage" asp-route-returnUrl="@returnUrl" method="post" class="d-inline">
+    <select name="culture" class="form-select form-select-sm" onchange="this.form.submit();">
+        <option value="en" selected="@(currentCulture == "en" ? "selected" : null)">English</option>
+        <option value="da" selected="@(currentCulture == "da" ? "selected" : null)">Dansk</option>
+        <option value="de" selected="@(currentCulture == "de" ? "selected" : null)">German</option>
+    </select>
+</form>

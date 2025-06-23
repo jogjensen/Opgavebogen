@@ -1,0 +1,10 @@
+@model GFVHaveserviceSQL.Models.ApplicationUser
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+<h2>@Localizer["DeleteWorker"]</h2>
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <p>@Localizer["DeleteConfirm", Model.Name]</p>
+    <button type="submit" class="btn btn-danger">@Localizer["Delete"]</button>
+    <a asp-action="Index" class="btn btn-secondary">@Localizer["Cancel"]</a>
+</form>

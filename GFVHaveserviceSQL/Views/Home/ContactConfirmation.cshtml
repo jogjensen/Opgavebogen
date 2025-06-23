@@ -1,0 +1,12 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
+    ViewData["Title"] = Localizer["ContactReceived"];
+}
+
+<div class="py-5 text-center">
+    <h1 class="display-4">@Localizer["ContactReceived"]</h1>
+    <p class="lead">@Localizer["FollowUp"]</p>
+    <p>@Localizer["CallUs"]</p>
+    <a asp-action="Index" asp-controller="Home" class="btn btn-success mt-3">@Localizer["ReturnHome"]</a>
+</div>

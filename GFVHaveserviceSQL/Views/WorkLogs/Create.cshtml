@@ -1,0 +1,55 @@
+@model GFVHaveserviceSQL.Models.WorkLog
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
+    var task = ViewBag.Task as GFVHaveserviceSQL.Models.WorkTask;
+}
+<h2>@Localizer["PunchTask"] - @task?.Name</h2>
+<form asp-action="Create" method="post">
+    <input type="hidden" asp-for="WorkTaskId" />
+    <div class="form-group">
+        <label asp-for="StartTime"></label>
+        <input asp-for="StartTime" type="datetime-local" step="60" asp-format="{0:yyyy-MM-ddTHH:mm}" class="form-control" lang="en-GB" />
+    </div>
+    <div class="form-group">
+        <label asp-for="EndTime"></label>
+        <input asp-for="EndTime" type="datetime-local" step="60" asp-format="{0:yyyy-MM-ddTHH:mm}" class="form-control" lang="en-GB" />
+    </div>
+    <div id="durationDisplay" class="mb-3 text-primary"></div>
+    <div class="form-group">
+        <label asp-for="EquipmentUsed"></label>
+        <input asp-for="EquipmentUsed" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">@Localizer["Save"]</button>
+</form>
+
+@section Scripts{
+    <script>
+        function updateDuration() {
+            const startInput = document.getElementById('StartTime');
+            const endInput = document.getElementById('EndTime');
+            const display = document.getElementById('durationDisplay');
+            if (!startInput || !endInput || !display) return;
+
+            const start = new Date(startInput.value);
+            const end = new Date(endInput.value);
+            if (!isNaN(start) && !isNaN(end) && end >= start) {
+                const diffMs = end - start;
+                const minutes = Math.floor(diffMs / 60000);
+                const hours = Math.floor(minutes / 60);
+                const mins = minutes % 60;
+                display.textContent = `${Localizer["Duration"]}: ${hours}h ${mins}m`;
+            } else {
+                display.textContent = '';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const startInput = document.getElementById('StartTime');
+            const endInput = document.getElementById('EndTime');
+            if (startInput) startInput.addEventListener('change', updateDuration);
+            if (endInput) endInput.addEventListener('change', updateDuration);
+            updateDuration();
+        });
+    </script>
+}

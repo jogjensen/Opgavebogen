@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Calendar" xml:space="preserve"><value>Kalender</value></data>
+  <data name="CalendarView" xml:space="preserve"><value>Kalendervisning</value></data>
+  <data name="ListView" xml:space="preserve"><value>Listevisning</value></data>
+  <data name="Sun" xml:space="preserve"><value>Søn</value></data>
+  <data name="Mon" xml:space="preserve"><value>Man</value></data>
+  <data name="Tue" xml:space="preserve"><value>Tirs</value></data>
+  <data name="Wed" xml:space="preserve"><value>Ons</value></data>
+  <data name="Thu" xml:space="preserve"><value>Tors</value></data>
+  <data name="Fri" xml:space="preserve"><value>Fre</value></data>
+  <data name="Sat" xml:space="preserve"><value>Lør</value></data>
+  <data name="Date" xml:space="preserve"><value>Dato</value></data>
+  <data name="Task" xml:space="preserve"><value>Opgave</value></data>
+  <data name="Customer" xml:space="preserve"><value>Kunde</value></data>
+  <data name="Id" xml:space="preserve"><value>Id</value></data>
+</root>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Home" xml:space="preserve"><value>Forside</value></data>
+  <data name="Tasks" xml:space="preserve"><value>Opgaver</value></data>
+  <data name="Calendar" xml:space="preserve"><value>Kalender</value></data>
+  <data name="Customers" xml:space="preserve"><value>Kunder</value></data>
+  <data name="Workers" xml:space="preserve"><value>Arbejdere</value></data>
+  <data name="Privacy" xml:space="preserve"><value>Privatliv</value></data>
+  <data name="Contact" xml:space="preserve"><value>Kontakt</value></data>
+  <data name="DarkMode" xml:space="preserve"><value>Mørk tilstand</value></data>
+  <data name="Submissions" xml:space="preserve"><value>Henvendelser</value></data>
+</root>

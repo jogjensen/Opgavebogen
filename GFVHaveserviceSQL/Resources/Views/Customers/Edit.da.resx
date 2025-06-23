@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="EditCustomer" xml:space="preserve"><value>Rediger kunde</value></data>
+  <data name="Name" xml:space="preserve"><value>Navn</value></data>
+  <data name="Telephone" xml:space="preserve"><value>Telefon</value></data>
+  <data name="Address" xml:space="preserve"><value>Adresse</value></data>
+  <data name="LastVisited" xml:space="preserve"><value>Sidst besøgt</value></data>
+  <data name="NextVisit" xml:space="preserve"><value>Næste besøg</value></data>
+  <data name="Save" xml:space="preserve"><value>Gem</value></data>
+</root>

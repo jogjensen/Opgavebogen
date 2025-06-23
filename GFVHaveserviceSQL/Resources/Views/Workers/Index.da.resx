@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Workers" xml:space="preserve"><value>Arbejdere</value></data>
+  <data name="CreateNewWorker" xml:space="preserve"><value>Opret ny arbejder</value></data>
+  <data name="Name" xml:space="preserve"><value>Navn</value></data>
+  <data name="Email" xml:space="preserve"><value>Email</value></data>
+  <data name="Phone" xml:space="preserve"><value>Telefon</value></data>
+  <data name="Edit" xml:space="preserve"><value>Rediger</value></data>
+  <data name="Delete" xml:space="preserve"><value>Slet</value></data>
+</root>

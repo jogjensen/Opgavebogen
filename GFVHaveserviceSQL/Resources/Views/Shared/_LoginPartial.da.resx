@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Hello" xml:space="preserve"><value>Hej</value></data>
+  <data name="Logout" xml:space="preserve"><value>Log ud</value></data>
+  <data name="Register" xml:space="preserve"><value>Registrer</value></data>
+  <data name="Login" xml:space="preserve"><value>Log ind</value></data>
+</root>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="EditWorker" xml:space="preserve"><value>Rediger arbejder</value></data>
+  <data name="Name" xml:space="preserve"><value>Navn</value></data>
+  <data name="Email" xml:space="preserve"><value>Email</value></data>
+  <data name="Phone" xml:space="preserve"><value>Telefon</value></data>
+  <data name="Save" xml:space="preserve"><value>Gem</value></data>
+</root>

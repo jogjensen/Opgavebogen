@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="TaskDetails" xml:space="preserve"><value>Task Details</value></data>
+  <data name="Name" xml:space="preserve"><value>Name</value></data>
+  <data name="Description" xml:space="preserve"><value>Description</value></data>
+  <data name="ID" xml:space="preserve"><value>ID</value></data>
+  <data name="Customer" xml:space="preserve"><value>Customer</value></data>
+  <data name="Workers" xml:space="preserve"><value>Workers</value></data>
+  <data name="Scheduled" xml:space="preserve"><value>Scheduled</value></data>
+  <data name="Status" xml:space="preserve"><value>Status</value></data>
+  <data name="TimeSpent" xml:space="preserve"><value>Time Spent (min)</value></data>
+  <data name="CompletedOn" xml:space="preserve"><value>Completed On</value></data>
+  <data name="BackToList" xml:space="preserve"><value>Back to list</value></data>
+  <data name="Edit" xml:space="preserve"><value>Edit</value></data>
+  <data name="Punch" xml:space="preserve"><value>Punch</value></data>
+</root>

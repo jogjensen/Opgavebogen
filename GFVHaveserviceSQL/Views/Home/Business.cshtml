@@ -1,0 +1,9 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
+    ViewData["Title"] = Localizer["Business"];
+}
+<div class="container py-5">
+    <h1 class="display-4 mb-4">@Localizer["Business"]</h1>
+    <p>@Localizer["Tagline"]</p>
+</div>

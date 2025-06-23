@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="DeleteCustomer" xml:space="preserve"><value>Delete Customer</value></data>
+  <data name="DeleteConfirm" xml:space="preserve"><value>Are you sure you want to delete {0}?</value></data>
+  <data name="Delete" xml:space="preserve"><value>Delete</value></data>
+  <data name="Cancel" xml:space="preserve"><value>Cancel</value></data>
+</root>

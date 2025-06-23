@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="ContactSubmissions" xml:space="preserve"><value>Kontakt henvendelser</value></data>
+  <data name="Name" xml:space="preserve"><value>Navn</value></data>
+  <data name="Email" xml:space="preserve"><value>Email</value></data>
+  <data name="Phone" xml:space="preserve"><value>Telefon</value></data>
+  <data name="PlaceOfWork" xml:space="preserve"><value>Arbejdsplads</value></data>
+  <data name="Description" xml:space="preserve"><value>Beskrivelse</value></data>
+  <data name="Date" xml:space="preserve"><value>Dato</value></data>
+  <data name="Seen" xml:space="preserve"><value>Set</value></data>
+  <data name="Yes" xml:space="preserve"><value>Ja</value></data>
+  <data name="No" xml:space="preserve"><value>Nej</value></data>
+  <data name="MarkSeen" xml:space="preserve"><value>Marker set</value></data>
+</root>

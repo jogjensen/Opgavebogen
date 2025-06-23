@@ -1,0 +1,45 @@
+@model GFVHaveserviceSQL.Models.WorkTask
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+<h2>@Localizer["TaskDetails"]</h2>
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">@Localizer["Name"]</dt>
+        <dd class="col-sm-10">@Model.Name</dd>
+        <dt class="col-sm-2">@Localizer["Description"]</dt>
+        <dd class="col-sm-10">@Model.TaskDescription</dd>
+        <dt class="col-sm-2">@Localizer["ID"]</dt>
+        <dd class="col-sm-10">@Model.PublicId</dd>
+        <dt class="col-sm-2">@Localizer["Customer"]</dt>
+        <dd class="col-sm-10">
+            @if (Model.Customer != null)
+            {
+                <a asp-controller="Customers" asp-action="Details" asp-route-id="@Model.CustomerId">@Model.Customer.Name</a>
+            }
+        </dd>
+        <dt class="col-sm-2">@Localizer["Workers"]</dt>
+        <dd class="col-sm-10">@string.Join(", ", Model.AssignedWorkers.Select(w => w.UserName))</dd>
+        <dt class="col-sm-2">@Localizer["Scheduled"]</dt>
+        <dd class="col-sm-10">@Model.ScheduledDate?.ToString("yyyy-MM-dd HH:mm")</dd>
+        <dt class="col-sm-2">@Localizer["Status"]</dt>
+        <dd class="col-sm-10">@Model.Status</dd>
+        @if (Model.Status == GFVHaveserviceSQL.Models.WorkTaskStatus.Completed)
+        {
+            <dt class="col-sm-2">@Localizer["TimeSpent"]</dt>
+            <dd class="col-sm-10">@Model.TakenTime</dd>
+            <dt class="col-sm-2">@Localizer["CompletedOn"]</dt>
+            <dd class="col-sm-10">@Model.CompletedOn?.ToString("yyyy-MM-dd HH:mm")</dd>
+        }
+    </dl>
+</div>
+<div class="mt-2">
+    <a asp-action="Index" class="btn btn-secondary">@Localizer["BackToList"]</a>
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">@Localizer["Edit"]</a>
+    }
+    @if (User.IsInRole("Worker") && Model.Status != GFVHaveserviceSQL.Models.WorkTaskStatus.Completed)
+    {
+        <a asp-controller="WorkLogs" asp-action="Create" asp-route-taskId="@Model.Id" class="btn btn-primary">@Localizer["Punch"]</a>
+    }
+</div>

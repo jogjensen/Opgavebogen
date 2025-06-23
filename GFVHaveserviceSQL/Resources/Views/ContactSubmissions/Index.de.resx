@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="ContactSubmissions" xml:space="preserve"><value>Kontaktanfragen</value></data>
+  <data name="Name" xml:space="preserve"><value>Name</value></data>
+  <data name="Email" xml:space="preserve"><value>E-Mail</value></data>
+  <data name="Phone" xml:space="preserve"><value>Telefon</value></data>
+  <data name="PlaceOfWork" xml:space="preserve"><value>Arbeitsplatz</value></data>
+  <data name="Description" xml:space="preserve"><value>Beschreibung</value></data>
+  <data name="Date" xml:space="preserve"><value>Datum</value></data>
+  <data name="Seen" xml:space="preserve"><value>Gesehen</value></data>
+  <data name="Yes" xml:space="preserve"><value>Ja</value></data>
+  <data name="No" xml:space="preserve"><value>Nein</value></data>
+  <data name="MarkSeen" xml:space="preserve"><value>Als gesehen markieren</value></data>
+</root>

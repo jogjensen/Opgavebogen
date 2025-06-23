@@ -1,0 +1,29 @@
+@model IEnumerable<GFVHaveserviceSQL.Models.Customer>
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+<h2>@Localizer["Customers"]</h2>
+<p><a asp-action="Create">@Localizer["CreateNew"]</a></p>
+<table class="table table-striped table-hover">
+    <tr>
+        <th>@Localizer["Name"]</th>
+        <th>@Localizer["Telephone"]</th>
+        <th>@Localizer["Address"]</th>
+        <th>@Localizer["LastVisited"]</th>
+        <th>@Localizer["NextVisit"]</th>
+        <th></th>
+    </tr>
+@foreach (var item in Model)
+{
+    <tr>
+        <td><a asp-action="Details" asp-route-id="@item.Id">@item.Name</a></td>
+        <td>@item.Telephone</td>
+        <td>@item.Address</td>
+        <td>@item.LastVisited?.ToShortDateString()</td>
+        <td>@item.NextVisit?.ToShortDateString()</td>
+        <td>
+            <a asp-action="Edit" asp-route-id="@item.Id">@Localizer["Edit"]</a> |
+            <a asp-action="Delete" asp-route-id="@item.Id">@Localizer["Delete"]</a>
+        </td>
+    </tr>
+}
+</table>

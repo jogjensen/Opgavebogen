@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Welcome" xml:space="preserve"><value>Welcome to GFV Haveservice</value></data>
+  <data name="Tagline" xml:space="preserve"><value>Professional care for your garden all year</value></data>
+  <data name="LearnMore" xml:space="preserve"><value>Learn more</value></data>
+  <data name="Gardening" xml:space="preserve"><value>Gardening</value></data>
+  <data name="GardeningDesc" xml:space="preserve"><value>We help with mowing, trimming and pruning.</value></data>
+  <data name="Consulting" xml:space="preserve"><value>Consulting</value></data>
+  <data name="ConsultingDesc" xml:space="preserve"><value>Advice on plants and garden design.</value></data>
+  <data name="Maintenance" xml:space="preserve"><value>Maintenance</value></data>
+  <data name="MaintenanceDesc" xml:space="preserve"><value>Keeping your garden beautiful all year.</value></data>
+  <data name="Private" xml:space="preserve"><value>Private</value></data>
+  <data name="Business" xml:space="preserve"><value>Business</value></data>
+  <data name="Housing" xml:space="preserve"><value>Housing association</value></data>
+</root>

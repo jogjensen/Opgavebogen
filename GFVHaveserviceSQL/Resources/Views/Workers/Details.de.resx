@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="WorkerDetails" xml:space="preserve"><value>Mitarbeiterdetails</value></data>
+  <data name="Email" xml:space="preserve"><value>E-Mail</value></data>
+  <data name="Phone" xml:space="preserve"><value>Telefon</value></data>
+  <data name="AssignedTasks" xml:space="preserve"><value>Zugewiesene Aufgaben</value></data>
+  <data name="Name" xml:space="preserve"><value>Name</value></data>
+  <data name="Customer" xml:space="preserve"><value>Kunde</value></data>
+  <data name="Scheduled" xml:space="preserve"><value>Geplant</value></data>
+  <data name="Id" xml:space="preserve"><value>Id</value></data>
+</root>

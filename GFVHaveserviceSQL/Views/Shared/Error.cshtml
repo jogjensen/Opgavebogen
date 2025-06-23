@@ -1,0 +1,25 @@
+@model ErrorViewModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
+    ViewData["Title"] = Localizer["Error"];
+}
+
+<h1 class="text-danger">@Localizer["Error"]</h1>
+<h2 class="text-danger">@Localizer["ErrorProcessing"]</h2>
+
+@if (Model.ShowRequestId)
+{
+    <p>
+        <strong>@Localizer["RequestId"]</strong> <code>@Model.RequestId</code>
+    </p>
+}
+
+<h3>@Localizer["DevelopmentMode"]</h3>
+<p>
+    @Localizer["DevelopmentInfo"]
+</p>
+<p>
+    <strong>@Localizer["DevelopmentWarning"]</strong>
+    @Localizer["DevelopmentInstructions"]
+</p>

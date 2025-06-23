@@ -1,0 +1,341 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #4caf50, #2e8b57);
+    color: #fff;
+    padding: 6rem 1rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-overlay {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.5);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+body.dark-mode .hero-overlay {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.calendar-table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.calendar-day {
+    height: 140px;
+    vertical-align: top;
+    padding: 0.25rem;
+    position: relative;
+    background-color: #fff;
+}
+
+.calendar-day.weekend {
+    background-color: #f0f8ff;
+}
+
+.calendar-day.other-month {
+    background-color: #f8f9fa;
+    color: #aaa;
+}
+
+.calendar-day-number {
+    font-weight: bold;
+    position: absolute;
+    top: 2px;
+    right: 4px;
+}
+
+.calendar-task {
+    background-color: #e9f5ff;
+    border: 1px solid #cce5ff;
+    border-radius: 3px;
+    padding: 2px 4px;
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+.calendar-task-status-New {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+.calendar-task-status-Assigned {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+.calendar-task-status-Ongoing {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.calendar-task-status-Completed {
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
+    text-decoration: line-through;
+}
+
+/* Navbar tweaks */
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .nav-link:hover {
+    color: #f8f9fa;
+}
+
+.marketing h2 {
+    margin-top: 1rem;
+}
+
+body {
+    background-color: #f5f8fa;
+}
+
+table.table-hover tbody tr:hover {
+    background-color: #e9f5ff;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e9ecef;
+    --bs-body-bg: #121212;
+    --bs-body-color: #e9ecef;
+}
+
+body.dark-mode .navbar {
+    background-color: #1f1f1f !important;
+}
+
+body.dark-mode .nav-link,
+body.dark-mode .navbar-brand {
+    color: #e9ecef !important;
+}
+
+body.dark-mode table.table-hover tbody tr:hover {
+    background-color: #2a2a2a;
+}
+
+body.dark-mode .calendar-day {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .calendar-day.weekend {
+    background-color: #252525;
+}
+
+body.dark-mode .calendar-day.other-month {
+    background-color: #333;
+    color: #bbb;
+}
+
+body.dark-mode .calendar-task {
+    background-color: #2d2d2d;
+    border-color: #444;
+}
+
+/* Ensure grey text remains readable in dark mode */
+body.dark-mode .text-muted,
+body.dark-mode .text-secondary {
+    color: #adb5bd !important;
+}
+
+body.dark-mode .text-dark {
+    color: #f8f9fa !important;
+}
+
+body.dark-mode a {
+    color: #91c9ff;
+}
+
+body.dark-mode a:hover {
+    color: #cce5ff;
+}
+
+/* Calendar header styling */
+.calendar-header .nav-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-header .month-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.view-toggle .btn {
+    min-width: 120px;
+}
+
+body.dark-mode .btn-outline-primary.active {
+    color: #fff;
+}
+.hero-frontpage {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 6rem 1rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+.service-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.service-box {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.9);
+    color: #000;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s, background-color 0.2s;
+    min-width: 180px;
+}
+.service-box:hover {
+    transform: translateY(-5px);
+    background-color: #fff;
+}
+body.dark-mode .service-box {
+    background-color: rgba(0,0,0,0.6);
+    color: #f8f9fa;
+}
+body.dark-mode .service-box:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.feature-icon {
+    font-size: 3rem;
+}
+
+.hero-alt {
+    background: linear-gradient(135deg, #4caf50, #2e8b57);
+    color: #fff;
+    padding: 8rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-alt .btn {
+    background-color: #fff;
+    color: #2e8b57;
+    border: none;
+}
+
+.hero-alt .btn:hover {
+    background-color: #f8f9fa;
+}
+
+body.dark-mode .hero-alt {
+    background: linear-gradient(135deg, #2e8b57, #1c4a32);
+}
+
+.hero-image {
+    background-image: url("https://scontent.fcph5-1.fna.fbcdn.net/v/t1.15752-9/435367413_1569315493915669_1806798574576819193_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_ohc=RR1aCl9PZrgQ7kNvwE_YRD_&_nc_oc=Admpr6M4umy0tenVNwHNPviRhYWHHFw80__qGVzjHhE4BIBst8Cp1DsBLuLrIzKhm6g&_nc_zt=23&_nc_ht=scontent.fcph5-1.fna&oh=03_Q7cD2gFFRLzQdmVIAKv-Fi-u01LloLTaqESwqIUZktbidJ4mlQ&oe=687E6DCB");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 8rem 1rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-buttons .btn {
+    min-width: 160px;
+}
+
+body.dark-mode .hero-buttons .btn {
+    background-color: #2a2a2a;
+    color: #f8f9fa;
+    border-color: #444;
+}
+
+body.dark-mode .hero-buttons .btn:hover {
+    background-color: #444;
+}
+
+body.dark-mode .hero-image {
+    background-image: url("https://scontent.fcph5-1.fna.fbcdn.net/v/t1.15752-9/435367413_1569315493915669_1806798574576819193_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_ohc=RR1aCl9PZrgQ7kNvwE_YRD_&_nc_oc=Admpr6M4umy0tenVNwHNPviRhYWHHFw80__qGVzjHhE4BIBst8Cp1DsBLuLrIzKhm6g&_nc_zt=23&_nc_ht=scontent.fcph5-1.fna&oh=03_Q7cD2gFFRLzQdmVIAKv-Fi-u01LloLTaqESwqIUZktbidJ4mlQ&oe=687E6DCB");
+}
+body.dark-mode table,
+body.dark-mode .table {
+    color: #e9ecef;
+    --bs-table-color: #e9ecef;
+    --bs-table-bg: #1f1f1f;
+    --bs-table-striped-bg: #2a2a2a;
+    --bs-table-striped-color: #e9ecef;
+    --bs-table-hover-bg: #262626;
+    --bs-table-hover-color: #e9ecef;
+    --bs-table-border-color: #444;
+}
+body.dark-mode thead,
+body.dark-mode .table thead {
+    color: #f8f9fa;
+    background-color: #1f1f1f;
+}
+body.dark-mode label,
+body.dark-mode .form-label,
+body.dark-mode .form-check-label {
+    color: #e9ecef;
+}
+body.dark-mode .form-control {
+    background-color: #2a2a2a;
+    color: #e9ecef;
+    border-color: #444;
+}
+body.dark-mode ::placeholder {
+    color: #adb5bd;
+}
+
+body.dark-mode .form-check-input {
+    background-color: #2a2a2a;
+    border-color: #444;
+}
+
+body.dark-mode .form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+body.dark-mode .table-striped > tbody > tr:nth-of-type(odd) {
+    --bs-table-accent-bg: #2a2a2a;
+}
+
+body.dark-mode .table,
+body.dark-mode .table-bordered {
+    border-color: #444;
+}

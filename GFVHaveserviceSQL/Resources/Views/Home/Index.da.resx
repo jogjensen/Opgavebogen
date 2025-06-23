@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Welcome" xml:space="preserve"><value>Velkommen til GFV Haveservice</value></data>
+  <data name="Tagline" xml:space="preserve"><value>Professionel pleje af din have året rundt</value></data>
+  <data name="LearnMore" xml:space="preserve"><value>Læs mere</value></data>
+  <data name="Gardening" xml:space="preserve"><value>Havearbejde</value></data>
+  <data name="GardeningDesc" xml:space="preserve"><value>Vi hjælper med græsslåning, hækklipning og beskæring.</value></data>
+  <data name="Consulting" xml:space="preserve"><value>Rådgivning</value></data>
+  <data name="ConsultingDesc" xml:space="preserve"><value>Vi rådgiver om plantevalg og indretning af haven.</value></data>
+  <data name="Maintenance" xml:space="preserve"><value>Vedligehold</value></data>
+  <data name="MaintenanceDesc" xml:space="preserve"><value>Vi sørger for, at din have står flot hele året.</value></data>
+  <data name="Private" xml:space="preserve"><value>Privat</value></data>
+  <data name="Business" xml:space="preserve"><value>Erhverv</value></data>
+  <data name="Housing" xml:space="preserve"><value>Boligforening</value></data>
+</root>

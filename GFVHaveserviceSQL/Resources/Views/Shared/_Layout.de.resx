@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Home" xml:space="preserve"><value>Startseite</value></data>
+  <data name="Tasks" xml:space="preserve"><value>Aufgaben</value></data>
+  <data name="Calendar" xml:space="preserve"><value>Kalender</value></data>
+  <data name="Customers" xml:space="preserve"><value>Kunden</value></data>
+  <data name="Workers" xml:space="preserve"><value>Mitarbeiter</value></data>
+  <data name="Privacy" xml:space="preserve"><value>Datenschutz</value></data>
+  <data name="Contact" xml:space="preserve"><value>Kontakt</value></data>
+  <data name="DarkMode" xml:space="preserve"><value>Dunkler Modus</value></data>
+  <data name="Submissions" xml:space="preserve"><value>Anfragen</value></data>
+</root>

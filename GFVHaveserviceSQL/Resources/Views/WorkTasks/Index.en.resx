@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Tasks" xml:space="preserve"><value>Tasks</value></data>
+  <data name="CreateNewTask" xml:space="preserve"><value>Create New Task</value></data>
+  <data name="Date" xml:space="preserve"><value>Date</value></data>
+  <data name="Worker" xml:space="preserve"><value>Worker</value></data>
+  <data name="All" xml:space="preserve"><value>All</value></data>
+  <data name="Filter" xml:space="preserve"><value>Filter</value></data>
+  <data name="Reset" xml:space="preserve"><value>Reset</value></data>
+  <data name="Open" xml:space="preserve"><value>Open</value></data>
+  <data name="Completed" xml:space="preserve"><value>Completed</value></data>
+  <data name="Name" xml:space="preserve"><value>Name</value></data>
+  <data name="Description" xml:space="preserve"><value>Description</value></data>
+  <data name="Customer" xml:space="preserve"><value>Customer</value></data>
+  <data name="Workers" xml:space="preserve"><value>Workers</value></data>
+  <data name="Id" xml:space="preserve"><value>Id</value></data>
+  <data name="Scheduled" xml:space="preserve"><value>Scheduled</value></data>
+  <data name="Status" xml:space="preserve"><value>Status</value></data>
+  <data name="TimeMinutes" xml:space="preserve"><value>Time (min)</value></data>
+  <data name="CompletedOn" xml:space="preserve"><value>Completed</value></data>
+  <data name="Show" xml:space="preserve"><value>show</value></data>
+  <data name="Punch" xml:space="preserve"><value>Punch</value></data>
+</root>

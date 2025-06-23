@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Welcome" xml:space="preserve"><value>Willkommen bei GFV Haveservice</value></data>
+  <data name="Tagline" xml:space="preserve"><value>Professionelle Pflege für Ihren Garten das ganze Jahr über</value></data>
+  <data name="LearnMore" xml:space="preserve"><value>Mehr erfahren</value></data>
+  <data name="Gardening" xml:space="preserve"><value>Gartenarbeit</value></data>
+  <data name="GardeningDesc" xml:space="preserve"><value>Wir helfen beim Mähen, Schneiden und Beschneiden.</value></data>
+  <data name="Consulting" xml:space="preserve"><value>Beratung</value></data>
+  <data name="ConsultingDesc" xml:space="preserve"><value>Beratung zur Pflanzenauswahl und Gartengestaltung.</value></data>
+  <data name="Maintenance" xml:space="preserve"><value>Pflege</value></data>
+  <data name="MaintenanceDesc" xml:space="preserve"><value>Wir halten Ihren Garten das ganze Jahr schön.</value></data>
+  <data name="Private" xml:space="preserve"><value>Privat</value></data>
+  <data name="Business" xml:space="preserve"><value>Gewerbe</value></data>
+  <data name="Housing" xml:space="preserve"><value>Wohnungsverein</value></data>
+</root>

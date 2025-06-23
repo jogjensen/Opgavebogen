@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="CreateTask" xml:space="preserve"><value>Opret opgave</value></data>
+  <data name="Date" xml:space="preserve"><value>Dato</value></data>
+  <data name="Time" xml:space="preserve"><value>Tid</value></data>
+  <data name="Recurring" xml:space="preserve"><value>Gentagelse</value></data>
+  <data name="RecurrenceOptions" xml:space="preserve"><value>Gentagelsesindstillinger</value></data>
+  <data name="RepeatOn" xml:space="preserve"><value>Gentag på</value></data>
+  <data name="Mon" xml:space="preserve"><value>Man</value></data>
+  <data name="Tue" xml:space="preserve"><value>Tirs</value></data>
+  <data name="Wed" xml:space="preserve"><value>Ons</value></data>
+  <data name="Thu" xml:space="preserve"><value>Tors</value></data>
+  <data name="Fri" xml:space="preserve"><value>Fre</value></data>
+  <data name="Sat" xml:space="preserve"><value>Lør</value></data>
+  <data name="Sun" xml:space="preserve"><value>Søn</value></data>
+  <data name="EndDate" xml:space="preserve"><value>Slutdato</value></data>
+  <data name="Customer" xml:space="preserve"><value>Kunde</value></data>
+  <data name="AssignedWorkers" xml:space="preserve"><value>Tildelte arbejdere</value></data>
+  <data name="Save" xml:space="preserve"><value>Gem</value></data>
+</root>

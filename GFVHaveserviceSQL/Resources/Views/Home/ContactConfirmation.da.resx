@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="ContactReceived" xml:space="preserve"><value>Tak for din henvendelse!</value></data>
+  <data name="FollowUp" xml:space="preserve"><value>Vi har modtaget din besked og vender tilbage hurtigst muligt.</value></data>
+  <data name="CallUs" xml:space="preserve"><value>Hvis din henvendelse haster, kan du ringe til os på 123-456-789.</value></data>
+  <data name="ReturnHome" xml:space="preserve"><value>Gå tilbage til forsiden</value></data>
+</root>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="CreateTask" xml:space="preserve"><value>Aufgabe erstellen</value></data>
+  <data name="Date" xml:space="preserve"><value>Datum</value></data>
+  <data name="Time" xml:space="preserve"><value>Zeit</value></data>
+  <data name="Recurring" xml:space="preserve"><value>Wiederkehrend</value></data>
+  <data name="RecurrenceOptions" xml:space="preserve"><value>Wiederholoptionen</value></data>
+  <data name="RepeatOn" xml:space="preserve"><value>Wiederholen am</value></data>
+  <data name="Mon" xml:space="preserve"><value>Mo</value></data>
+  <data name="Tue" xml:space="preserve"><value>Di</value></data>
+  <data name="Wed" xml:space="preserve"><value>Mi</value></data>
+  <data name="Thu" xml:space="preserve"><value>Do</value></data>
+  <data name="Fri" xml:space="preserve"><value>Fr</value></data>
+  <data name="Sat" xml:space="preserve"><value>Sa</value></data>
+  <data name="Sun" xml:space="preserve"><value>So</value></data>
+  <data name="EndDate" xml:space="preserve"><value>Enddatum</value></data>
+  <data name="Customer" xml:space="preserve"><value>Kunde</value></data>
+  <data name="AssignedWorkers" xml:space="preserve"><value>Zugewiesene Mitarbeiter</value></data>
+  <data name="Save" xml:space="preserve"><value>Speichern</value></data>
+</root>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="CustomerDetails" xml:space="preserve"><value>Kundendetails</value></data>
+  <data name="Name" xml:space="preserve"><value>Name</value></data>
+  <data name="Telephone" xml:space="preserve"><value>Telefon</value></data>
+  <data name="Address" xml:space="preserve"><value>Adresse</value></data>
+  <data name="LastVisited" xml:space="preserve"><value>Letzter Besuch</value></data>
+  <data name="NextVisit" xml:space="preserve"><value>Nächster Besuch</value></data>
+  <data name="Tasks" xml:space="preserve"><value>Aufgaben</value></data>
+  <data name="Scheduled" xml:space="preserve"><value>Geplant</value></data>
+  <data name="Status" xml:space="preserve"><value>Status</value></data>
+  <data name="NoTasks" xml:space="preserve"><value>Keine Aufgaben für diesen Kunden.</value></data>
+  <data name="Back" xml:space="preserve"><value>Zurück</value></data>
+</root>

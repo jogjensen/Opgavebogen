@@ -1,0 +1,98 @@
+@model GFVHaveserviceSQL.Models.WorkTask
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
+    var customers = ViewBag.Customers as IEnumerable<GFVHaveserviceSQL.Models.Customer>;
+    var workers = ViewBag.Workers as IEnumerable<GFVHaveserviceSQL.Models.ApplicationUser>;
+}
+<h2>@Localizer["CreateTask"]</h2>
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="TaskDescription"></label>
+        <input asp-for="TaskDescription" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ScheduledDate">@Localizer["Date"]</label>
+        <input name="scheduleDate" type="date" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>@Localizer["Time"]</label>
+        <select name="scheduleTime" class="form-control">
+@{
+    var currentTime = DateTime.Now.ToString("HH:mm");
+    for (int h = 0; h < 24; h++)
+    {
+        for (int m = 0; m < 60; m += 30)
+        {
+            var option = new DateTime(1, 1, 1, h, m, 0).ToString("HH:mm");
+            var selected = option == currentTime ? "selected" : string.Empty;
+            <option value="@option" selected="@selected">@option</option>
+        }
+    }
+}
+        </select>
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" asp-for="IsRecurring" id="IsRecurring" />
+        <label class="form-check-label" asp-for="IsRecurring">@Localizer["Recurring"]</label>
+    </div>
+    <div id="recurrenceOptions" class="border rounded p-3 mb-3">
+        <h4>@Localizer["RecurrenceOptions"]</h4>
+        <div class="form-group mb-3">
+            <label>@Localizer["RepeatOn"]</label>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="recurrenceDays" value="Monday" id="mon" />
+            <label class="form-check-label" for="mon">@Localizer["Mon"]</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="recurrenceDays" value="Tuesday" id="tue" />
+            <label class="form-check-label" for="tue">@Localizer["Tue"]</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="recurrenceDays" value="Wednesday" id="wed" />
+            <label class="form-check-label" for="wed">@Localizer["Wed"]</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="recurrenceDays" value="Thursday" id="thu" />
+            <label class="form-check-label" for="thu">@Localizer["Thu"]</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="recurrenceDays" value="Friday" id="fri" />
+            <label class="form-check-label" for="fri">@Localizer["Fri"]</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="recurrenceDays" value="Saturday" id="sat" />
+            <label class="form-check-label" for="sat">@Localizer["Sat"]</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="recurrenceDays" value="Sunday" id="sun" />
+            <label class="form-check-label" for="sun">@Localizer["Sun"]</label>
+        </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="RecurrenceEndDate">@Localizer["EndDate"]</label>
+            <input asp-for="RecurrenceEndDate" type="date" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label>@Localizer["Customer"]</label>
+        <select asp-for="CustomerId" asp-items="@(new SelectList(customers, "Id", "Name"))" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label>@Localizer["AssignedWorkers"]</label>
+        <div>
+        @foreach (var worker in workers!)
+        {
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="workerIds" value="@worker.Id" id="worker_@worker.Id" />
+                <label class="form-check-label" for="worker_@worker.Id">@worker.UserName</label>
+            </div>
+        }
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">@Localizer["Save"]</button>
+</form>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="PunchTask" xml:space="preserve"><value>Punch opgave</value></data>
+  <data name="Save" xml:space="preserve"><value>Gem</value></data>
+  <data name="Duration" xml:space="preserve"><value>Varighed</value></data>
+</root>

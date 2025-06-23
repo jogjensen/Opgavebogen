@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="EditTask" xml:space="preserve"><value>Edit Task</value></data>
+  <data name="Date" xml:space="preserve"><value>Date</value></data>
+  <data name="Time" xml:space="preserve"><value>Time</value></data>
+  <data name="Recurring" xml:space="preserve"><value>Recurring</value></data>
+  <data name="RepeatOn" xml:space="preserve"><value>Repeat on</value></data>
+  <data name="Mon" xml:space="preserve"><value>Mon</value></data>
+  <data name="Tue" xml:space="preserve"><value>Tue</value></data>
+  <data name="Wed" xml:space="preserve"><value>Wed</value></data>
+  <data name="Thu" xml:space="preserve"><value>Thu</value></data>
+  <data name="Fri" xml:space="preserve"><value>Fri</value></data>
+  <data name="Sat" xml:space="preserve"><value>Sat</value></data>
+  <data name="Sun" xml:space="preserve"><value>Sun</value></data>
+  <data name="EndDate" xml:space="preserve"><value>End Date</value></data>
+  <data name="Customer" xml:space="preserve"><value>Customer</value></data>
+  <data name="AssignedWorkers" xml:space="preserve"><value>Assigned Workers</value></data>
+  <data name="Save" xml:space="preserve"><value>Save</value></data>
+</root>

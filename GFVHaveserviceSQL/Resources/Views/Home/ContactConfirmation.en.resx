@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="ContactReceived" xml:space="preserve"><value>Thank you for reaching out!</value></data>
+  <data name="FollowUp" xml:space="preserve"><value>We have received your message and will get back to you shortly.</value></data>
+  <data name="CallUs" xml:space="preserve"><value>If your request is urgent, please call us at 123-456-789.</value></data>
+  <data name="ReturnHome" xml:space="preserve"><value>Return to the front page</value></data>
+</root>

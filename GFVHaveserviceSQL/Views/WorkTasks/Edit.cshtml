@@ -1,0 +1,97 @@
+@model GFVHaveserviceSQL.Models.WorkTask
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
+    var customers = ViewBag.Customers as IEnumerable<GFVHaveserviceSQL.Models.Customer>;
+    var workers = ViewBag.Workers as IEnumerable<GFVHaveserviceSQL.Models.ApplicationUser>;
+}
+<h2>@Localizer["EditTask"]</h2>
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="TaskDescription"></label>
+        <input asp-for="TaskDescription" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ScheduledDate">@Localizer["Date"]</label>
+        <input name="scheduleDate" type="date" class="form-control" value="@Model.ScheduledDate?.ToString("yyyy-MM-dd")" />
+    </div>
+    <div class="form-group">
+        <label>@Localizer["Time"]</label>
+        <select name="scheduleTime" class="form-control">
+@{
+    var currentTime = Model.ScheduledDate?.ToString("HH:mm") ?? DateTime.Now.ToString("HH:mm");
+    for (int h = 0; h < 24; h++)
+    {
+        for (int m = 0; m < 60; m += 30)
+        {
+            var option = new DateTime(1, 1, 1, h, m, 0).ToString("HH:mm");
+            var selected = option == currentTime ? "selected" : string.Empty;
+            <option value="@option" selected="@selected">@option</option>
+        }
+    }
+}
+        </select>
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" asp-for="IsRecurring" />
+        <label class="form-check-label" asp-for="IsRecurring">@Localizer["Recurring"]</label>
+    </div>
+    <div class="form-group">
+        <label>@Localizer["RepeatOn"]</label>
+        @{ var days = (Model.RecurrenceDays ?? "").Split(','); }
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="recurrenceDays" value="Monday" id="mon" @(days.Contains("Monday") ? "checked" : "") />
+            <label class="form-check-label" for="mon">@Localizer["Mon"]</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="recurrenceDays" value="Tuesday" id="tue" @(days.Contains("Tuesday") ? "checked" : "") />
+            <label class="form-check-label" for="tue">@Localizer["Tue"]</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="recurrenceDays" value="Wednesday" id="wed" @(days.Contains("Wednesday") ? "checked" : "") />
+            <label class="form-check-label" for="wed">@Localizer["Wed"]</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="recurrenceDays" value="Thursday" id="thu" @(days.Contains("Thursday") ? "checked" : "") />
+            <label class="form-check-label" for="thu">@Localizer["Thu"]</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="recurrenceDays" value="Friday" id="fri" @(days.Contains("Friday") ? "checked" : "") />
+            <label class="form-check-label" for="fri">@Localizer["Fri"]</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="recurrenceDays" value="Saturday" id="sat" @(days.Contains("Saturday") ? "checked" : "") />
+            <label class="form-check-label" for="sat">@Localizer["Sat"]</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="recurrenceDays" value="Sunday" id="sun" @(days.Contains("Sunday") ? "checked" : "") />
+            <label class="form-check-label" for="sun">@Localizer["Sun"]</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="RecurrenceEndDate">@Localizer["EndDate"]</label>
+        <input asp-for="RecurrenceEndDate" type="date" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>@Localizer["Customer"]</label>
+        <select asp-for="CustomerId" asp-items="@(new SelectList(customers, "Id", "Name"))" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label>@Localizer["AssignedWorkers"]</label>
+        <div>
+        @foreach (var worker in workers!)
+        {
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="workerIds" value="@worker.Id" id="worker_@worker.Id" @(Model.AssignedWorkers.Any(w => w.Id == worker.Id) ? "checked" : "") />
+                <label class="form-check-label" for="worker_@worker.Id">@worker.UserName</label>
+            </div>
+        }
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">@Localizer["Save"]</button>
+</form>

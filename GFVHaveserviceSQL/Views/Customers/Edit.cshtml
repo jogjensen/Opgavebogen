@@ -1,0 +1,28 @@
+@model GFVHaveserviceSQL.Models.Customer
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+<h2>@Localizer["EditCustomer"]</h2>
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Telephone"></label>
+        <input asp-for="Telephone" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Address"></label>
+        <input asp-for="Address" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="LastVisited"></label>
+        <input asp-for="LastVisited" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="NextVisit"></label>
+        <input asp-for="NextVisit" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">@Localizer["Save"]</button>
+</form>
